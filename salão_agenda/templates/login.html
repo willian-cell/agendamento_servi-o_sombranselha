@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Login da Administradora</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>🔒 Login da Administradora</h2>
+    <form method="post">
+      <input type="email" name="email" placeholder="E-mail" required>
+      <input type="password" name="senha" placeholder="Senha" required>
+      <button type="submit">Entrar</button>
+      {% if erro %}
+        <p style="color: red">{{ erro }}</p>
+      {% endif %}
+    </form>
+    <a href="/">Voltar</a>
+  </div>
+</body>
+</html>

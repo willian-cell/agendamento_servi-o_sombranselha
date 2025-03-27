@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>📋 Agendamentos</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div class="container">
+    <h2 style="text-align: center;">📋 Agendamentos</h2>
+
+    <div style="overflow-x: auto;">
+      <table>
+        <tr>
+          <th>Nome</th>
+          <th>Telefone</th>
+          <th>Email</th>
+          <th>Serviço</th>
+          <th>Data</th>
+          <th>Horário</th>
+        </tr>
+        {% for a in agendamentos %}
+        <tr>
+          <td>{{ a[1] }}</td>
+          <td>{{ a[2] }}</td>
+          <td>{{ a[3] }}</td>
+          <td>{{ a[4] }}</td>
+          <td>{{ a[5] }}</td>
+          <td>{{ a[6] }}</td>
+        </tr>
+        {% endfor %}
+      </table>
+    </div>
+
+    <a href="/logout"><button>Sair</button></a>
+  </div>
+</body>
+</html>

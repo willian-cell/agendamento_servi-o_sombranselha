@@ -1,0 +1,195 @@
+/* RESET E BASE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: sans-serif;
+    background: #fff0f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    min-height: 100vh;
+  }
+  
+  /* CONTAINER GERAL */
+  .container {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .logo {
+    width: 120px;
+    margin-bottom: 1rem;
+    border-radius: 50%;
+  }
+  
+  /* CAMPOS */
+  input, select, button {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+  }
+  
+  /* BOTÕES */
+  button {
+    background-color: hotpink;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  button:hover {
+    background-color: deeppink;
+  }
+  
+  .admin-btn {
+    background-color: #333;
+    margin-top: 1rem;
+  }
+  
+  /* TABELAS */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+  }
+  
+  /* Tabela elegante */
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin-top: 1rem;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 12px rgba(0,0,0,0.05);
+}
+
+th, td {
+  padding: 14px 16px;
+  text-align: left;
+  font-size: 14px;
+  vertical-align: middle;
+}
+
+th {
+  background-color: #f2f2f2;
+  font-weight: 600;
+  color: #444;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+td {
+  background-color: #fff;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+tr:hover td {
+  background-color: #fafafa;
+  transition: background 0.3s ease;
+}
+
+/* Emojis no centro */
+td:has(> svg), td:has(> .emoji) {
+  text-align: center;
+}
+
+/* Botão sair elegante */
+button {
+  margin-top: 2rem;
+  padding: 12px 20px;
+  background-color: hotpink;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: deeppink;
+}
+
+  
+  th {
+    background-color: #f8f8f8;
+  }
+  
+  /* TEXTO INFORMATIVO */
+  .info {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  /* RESPONSIVIDADE */
+  @media (max-width: 600px) {
+    .container {
+      padding: 1rem;
+    }
+  
+    .logo {
+      width: 60px;
+      border-radius: 50%;
+    }
+  
+    input, select, button {
+      font-size: 14px;
+      padding: 10px;
+    }
+  
+    table, th, td {
+      font-size: 12px;
+    }
+  
+    h1, h2 {
+      font-size: 20px;
+    }
+  }
+  
+
+  /* mensagem de ok pra cadastro */
+
+  .mensagem-sucesso {
+    background: #e0ffe0;
+    border: 2px solid #00aa00;
+    padding: 1rem;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+    text-align: center;
+    animation: fadein 1s ease;
+  }
+  
+  .mensagem-sucesso h2 {
+    color: #006600;
+    margin-top: 0.5rem;
+  }
+  
+  .emoji {
+    font-size: 3rem;
+  }
+  
+  @keyframes fadein {
+    from { opacity: 0; transform: scale(0.95); }
+    to   { opacity: 1; transform: scale(1); }
+  }
+  

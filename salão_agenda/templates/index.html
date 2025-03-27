@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>✨ Agende seu Horário</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div class="container">
+
+    {% if sucesso %}
+    <div class="mensagem-sucesso">
+        <div class="emoji">👍</div>
+        <h2>Agendamento confirmado com sucesso!</h2>
+    </div>
+    {% endif %}
+
+    <img src="/static/IMG_7415.jpg" alt="Salon Logo" class="logo">
+    <h1>✨ Agende seu Horário</h1>
+
+    <form method="post">
+      <input type="text" name="nome" placeholder="Nome" required>
+      <input type="text" name="telefone" placeholder="Telefone" required>
+      <input type="email" name="email" placeholder="Email" required>
+
+      <select name="servico" required>
+        <option disabled selected>Escolha um serviço</option>
+        <option>✨ Design de Sobrancelhas - R$ 50</option>
+        <option>🎨 Micropigmentação - R$ 800</option>
+        <option>👁️ Extensão de Cílios - R$ 150</option>
+        <option>🌿 Limpeza de Pele - R$ 120</option>
+      </select>
+
+      <input type="date" name="data" required>
+      <input type="time" name="horario" required>
+
+      <button type="submit">✨ Agendar Agora</button>
+    </form>
+
+    <a href="/login"><button class="admin-btn">🔒 Ver Agendamentos</button></a>
+
+    <p class="info">Você receberá uma confirmação por email 💅</p>
+  </div>
+</body>
+</html>
